@@ -21,7 +21,7 @@ export class AwsCdkPipelineStack extends Stack {
         env: {account: "343962227496", region: "us-east-1"}
       }))
 
-      testingStage.addPost(new ManualApprovalStep('Manual approbal before production'));
+      testingStage.addPost(new ManualApprovalStep('Manual approval before production'));
 
       const prodStage = pipeline.addStage(new MyPipelineAppStage(this, "prod", {
         env: {account: "343962227496", region: "us-east-1"}
