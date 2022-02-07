@@ -1,7 +1,8 @@
 import { Stack, StackProps } from 'aws-cdk-lib';
-import { CodePipeline } from 'aws-cdk-lib/aws-events-targets';
-import { CodePipelineSource, ShellStep } from 'aws-cdk-lib/pipelines';
 import { Construct } from 'constructs';
+import { CodePipeline, CodePipelineSource, ShellStep } from 'aws-cdk-lib/pipelines';
+import { ManualApprovalStep } from 'aws-cdk-lib/pipelines';
+//import { MyPipelineAppStage } from './stage';
 // import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 export class AwsCdkPipelineStack extends Stack {
