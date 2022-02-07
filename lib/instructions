@@ -1,0 +1,7 @@
+export CDK_NEW_BOOTSTRAP=1
+npx cdk bootstrap aws://339135513244/us-east-1
+cdk init app --language typescript
+package json "aws-cdk-lib": "2.8.0" and "aws-cdk": "2.8.0"
+cdk deploy --this deploys the pipeline and the cdk stack
+
+github-token in secrets manager
